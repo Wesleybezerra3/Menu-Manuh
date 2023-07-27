@@ -5,36 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Links -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="img/pngs-jpeg/Logo 2.0.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="shortcut icon"
+      href="img/pngs-jpeg/Logo 2.0.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!---->
 
     <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js" defer></script>
+    <script src="js/rotate.js" defer></script>
     <!---->
     <title>Menu Manuh</title>
   </head>
   <body>
     <header>
-       <div id="menu">
-        <i class="fa-solid fa-bars" style="color: #ededed;"></i>
-       </div>
-       <div id="containerLogo">
-         <p id="nameFirst">Manuh</p>
-         <p id="nameSecond">Cakestudio</p>
-       </div>
+      <div id="menu">
+        <i class="fa-solid fa-bars" style="color: #ededed"></i>
+      </div>
+      <div id="containerLogo">
+        <p id="nameFirst">Manuh</p>
+        <p id="nameSecond">Cakestudio</p>
+      </div>
     </header>
     <nav>
-        <ul>
-            <li><a href="#">Bolos</a></li>
-            <li><a href="#">Brownies</a></li>
-            <li><a href="#">Brigadeiros</a></li>
-            <li><a href="#">Capcukes</a></li>
-            <li><a href="#">DocesFinos</a></li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
-        </ul>
+      <ul>
+        <li><a href="#">Bolos</a></li>
+        <li><a href="#">Brownies</a></li>
+        <li><a href="#">Brigadeiros</a></li>
+        <li><a href="#">Capcukes</a></li>
+        <li><a href="#">Doces finos</a></li>
+        <li><a href="#">Tortas e mini tortas</a></li>
+        <li><a href="#">Trunfas</a></li>
+        <li><a href="#">Pudins</a></li>
+      </ul>
     </nav>
+    <section id="presentation">
+      <h1>Bem vindos ao mundo doce da Manuh🍫</h1>
+      <div class="containerPresentation">
+        <article><p>Nossos doces são feito com <span>amor</span> e ingredientes de <span>qualidade</span>. Somos uma confeitaria caseira, Mas não se engane, fazemos de tudo para que o cliente tenha a <span>melhor experiêcia</span> possível.</p></article>
+        <img src="img/svgs/cake shop-cuate.svg" alt="Cake shop">
+      </div>
+    </section>
+    <main>
+      <section class="cakes">
+        <details open>
+          <summary id="summaryCake">
+            <h2>Bolos</h2>
+            <i class="fa-solid fa-caret-down"></i>
+          </summary>
+          <div class="container">
+            <div class="descriçao">
+              <h3>Mini bolo (Duas Pessoas)</h3>
+              <article>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione eaque alias obcaecati.
+                </p>
+                <a href=""
+                  >Consulte os sabores disponiveis no
+                  <i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <p class="valor">A partir de R$12,00</p>
+              </article>
+            </div>
+            <div class="imgProduto">
+              <img src="img/pngs-jpeg/mini-bolo.jpg" alt="" />
+            </div>
+          </div>
+          <div class="container">
+            <div class="descriçao">
+              <h3>Bolo Grande (1kg)</h3>
+              <article>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione eaque alias obcaecati.
+                </p>
+                <a href=""
+                  >Consulte os sabores disponiveis no
+                  <i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <p class="valor">A partir de R$50,00</p>
+              </article>
+            </div>
+            <div class="imgProduto">
+              <img src="img/pngs-jpeg/bolo-grande.jpg" alt="" />
+            </div>
+          </div>
+        </details>
+      </section>
+      <section class="brownies">
+        <details open>
+          <summary id="summaryBrownies">
+            <h2>Brownies</h2>
+            <i class="fa-solid fa-caret-down"></i>
+          </summary>
+          <div class="container">
+            <div class="descriçao">
+              <h3>Brownie (Individual)</h3>
+              <article>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione eaque alias obcaecati.
+                </p>
+                <a href=""
+                  >Consulte os sabores disponiveis no
+                  <i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <p class="valor">A partir de R$10,00</p>
+              </article>
+            </div>
+            <div class="imgProduto">
+              <img src="img/pngs-jpeg/brownie-p.jpg" alt="" />
+            </div>
+          </div>
+          <div class="container">
+            <div class="descriçao">
+              <h3>Brownie Grande (1kg)</h3>
+              <article>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione eaque alias obcaecati.
+                </p>
+                <a href=""
+                  >Consulte os sabores disponiveis no
+                  <i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <p class="valor">A partir de R$45,00</p>
+              </article>
+            </div>
+            <div class="imgProduto">
+              <img src="img/pngs-jpeg/brownie-g.jpg" alt="" />
+            </div>
+          </div>
+        </details>
+      </section>
+    </main>
   </body>
 </html>
