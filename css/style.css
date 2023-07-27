@@ -28,7 +28,7 @@ nav::-webkit-scrollbar-track {
 body {
   background-color: var(--bg-color);
   width: 100%;
-  margin-bottom: 500px;
+
 }
 header {
   position: relative;
@@ -102,15 +102,7 @@ font-family: var(--Roboto);
 margin-bottom: 10px;
 
 }
-.containerPresentation>article>p{
-  text-align: justify;
- color:rgba(2, 2, 2, 0.774) ;
- font-family: var(--Roboto);
- font-size: 1.1em;
- font-weight: 500;
- padding: 5px;
-}
-.containerPresentation img{
+.containerHero img{
   margin-top: 10px;
   width: 70%;
   max-width: 750px;
@@ -162,7 +154,7 @@ summary h2{
   margin: 10px;
 }
 .descriçao p {
-  color: rgba(2, 2, 2, 0.774);
+  color: var(--color-first);
   font-weight: 500;
   font-family: var(--Roboto);
   margin-top: 10px;
@@ -192,4 +184,36 @@ summary h2{
 }
 .imgProduto img{
  width: 130px;
+}
+footer{
+  background-color: var(--color-first);
+  margin-top: 80px;
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+}
+footer p{
+  font-family: var(--Roboto);
+  color: var(--bg-color);
+  font-weight: 500;
+}
+footer span{
+  color: rgb(187, 123, 247);
+}
+h1{
+  color: var(--bg-color);
+  font-family: var(--Rowdies);
+  font-size: 1.3em;
+  margin-top: 20px;
+}
+.contatos{
+margin-top: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1.5em;
+}
+footer .fa-brands{
+  color: var(--white);
+  font-size: 2em;
 }
