@@ -9,6 +9,7 @@
   --white:#fff;
   --black:black;
 }
+/* SCROLL */
 nav::-webkit-scrollbar {
   width: 8px;
   height: 12px;
@@ -20,6 +21,7 @@ nav::-webkit-scrollbar-thumb {
 nav::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.082);
 }
+/*  */
 * {
   padding: 0;
   margin: 0;
@@ -30,6 +32,7 @@ body {
   width: 100%;
 
 }
+/* HEADER */
 header {
   position: relative;
   display: flex;
@@ -61,6 +64,8 @@ header {
   font-family: var(--Rowdies);
   font-size: 0.8em;
 }
+/*  */
+/* NAVBAR */
 nav {
   position: fixed;
   z-index: 10;
@@ -84,7 +89,7 @@ nav li {
 nav a {
   color: var(--color-first);
   font-family: var(--Rowdies);
-  font-size: 1.8em;
+  font-size: 1.5em;
   text-decoration: none;
   transition-duration: 0.8s;
   white-space: nowrap;
@@ -94,6 +99,8 @@ nav a:hover, nav a:focus{
     padding: 8px;
     border-radius:20px;
 }
+/*  */
+/* PRESENTATION */
 #presentation{
   margin-top: 10px;
   margin-bottom: -20px;
@@ -102,20 +109,33 @@ nav a:hover, nav a:focus{
 }
 #presentation h1{
 color: var(--color-first);
-font-family: var(--Roboto);
+font-family: var(--Rowdies);
 margin-bottom: 10px;
 
 }
+#presentation h2{
+  color: rgb(180, 38, 38);
+  font-family: var(--Roboto);
+  margin-bottom: 10px;
+}
+#presentation p{
+  color: var(--color-first);
+  font-family: var(--Roboto);
+  font-size: 1.2em;
+  font-weight:500;
+  margin-bottom: 10px;
+}
+/*  */
 .containerHero img{
   margin-top: 10px;
   width: 70%;
   max-width: 750px;
 }
 span{
-  color: #e93899;
+  color: #e73d9b;
 }
 
-
+/* PRODUTOS */
 details{
   margin-top: 50px;
   background-color: var(--white);
@@ -169,27 +189,34 @@ summary h2{
   color: var(--color-segund);
   font-family: var(--Roboto);
 }
-.descriçao a{
-  color: #e93899;
+.container a{
+  background-color: var(--color-first);
+  color: var(--bg-color);
   font-family: var(--Roboto);
   font-size: 1em;
   font-weight: 500;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px var(--color-third) ;
   text-decoration: none;
+  padding: 5px;
+  white-space: nowrap;
 }
 .valor{
-  margin-top: 20px;
   color: var(--color-first);
   font-size: 1.1em;
   font-family: var(--Roboto);
   font-weight: 900;
+ 
 }
-
 .imgProduto{
  margin: 10px;
+ text-align: center;
 }
 .imgProduto img{
- width: 130px;
+  width: 130px;
 }
+/*  */
+/* FOOTER */
 footer{
   background-color: var(--color-first);
   margin-top: 80px;
@@ -205,7 +232,7 @@ footer p{
 footer span{
   color: rgb(187, 123, 247);
 }
-h1{
+footer h1{
   color: var(--bg-color);
   font-family: var(--Rowdies);
   font-size: 1.3em;
@@ -222,3 +249,4 @@ footer .fa-brands{
   color: var(--white);
   font-size: 2em;
 }
+/*  */
