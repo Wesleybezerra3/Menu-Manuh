@@ -190,6 +190,9 @@ summary h2{
   font-family: var(--Roboto);
 }
 .container a{
+  display: block;
+  width: 130px;
+  margin-bottom: 10px;
   background-color: var(--color-first);
   color: var(--bg-color);
   font-family: var(--Roboto);
